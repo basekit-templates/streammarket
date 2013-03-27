@@ -1,8 +1,7 @@
 {
 	"name":"Stream Market",
-	"directory":"streammarket",
-	"thumbnail":"/streammarket/streammarket.jpg",
-	"screenshot":"/streammarket/streammarket.jpg",
+	"thumbnail":"streammarket.jpg",
+	"screenshot":"streammarket.jpg",
 	"pageTypes":[],
 	"defaultColorSwatch":"Bright 1",
 	"defaultFontSwatch":"Droid Sans"
