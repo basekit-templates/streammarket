@@ -439,7 +439,7 @@ hr.line.align-right {
 .widget.extendednavigation ul.align-right li
 {
     text-align: right;
-    background-image: none;   
+    background-image: left center;   
 }
             
 .widget.extendednavigation ul li {
@@ -516,6 +516,7 @@ hr.line.align-right {
     background-position: left center;
     background-repeat: no-repeat;
     border-top: 1px solid @color-swatch2;
+    padding-left: 30px;
 }
 
 .widget.extendednavigation ul li:hover ul li a {
@@ -528,6 +529,10 @@ hr.line.align-right {
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
+}
+
+.widget.extendednavigation ul.align-center li:hover ul li {
+    padding-left: 0;
 }
 
 
