@@ -1,8 +1,141 @@
 {
-	"name":"Stream Market",
-	"thumbnail":"streammarket.jpg",
-	"screenshot":"streammarket.jpg",
-	"pageTypes":[],
-	"defaultColorSwatch":"Colorful 1",
-	"defaultFontSwatch":"Droid Sans"
+    "name":"Stream Market",
+    "thumbnail":"streammarket.png",
+    "screenshot":"streammarket.png",
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#2c323b",
+            "color3":"#6ed0ed",
+            "color4":"#546373",
+            "color5":"#abb2c1",
+            "color6":"#adb3bb",
+            "color7":"#ffffff"
+        },
+        "Swatch 2": {
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
+        },
+        "Swatch 3": {
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
+        },
+        "Swatch 4": {
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
+        },
+        "Swatch 5": {
+            "color1":"#f8f5ec",
+            "color2":"#2d2727",
+            "color3":"#8fcb85",
+            "color4":"#5c5757",
+            "color5":"#aa9c8d",
+            "color6":"#545454",
+            "color7":"#f8f5eb"
+        }
+    },
+    "fontSwatch": {
+       "title": "Raleway",
+        "font1": {
+            "font-family": "Roboto",
+            "font-size": "36px",
+            "font-weight": "500",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Roboto",
+            "font-size": "24px",
+            "font-weight": "inherit",
+            "line-height": "32px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "Roboto",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "Roboto",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "26px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "Helvetica",
+            "font-size": "14px",
+            "font-weight": "300",
+            "line-height": "30px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "Helvetica",
+            "font-size": "16px",
+            "font-weight": "300",
+            "line-height": "28px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch3",
+            "letter-spacing": "0px",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "darken(@color-swatch2,5%)"
+        },
+        "font7": {
+            "font-family": "Roboto",
+            "font-size": "14px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch1",
+            "letter-spacing": "1px",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,5%)"
+        },
+        "font8": {
+            "font-family": "Roboto",
+            "font-size": "40px",
+            "font-weight": "300",
+            "line-height": "65px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Helvetica",
+            "font-size": "16px",
+            "font-weight": "300",
+            "line-height": "34px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "Roboto",
+            "font-size": "26px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        }
+    }
 }

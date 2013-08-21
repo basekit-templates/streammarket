@@ -1,18 +1,36 @@
 {% extends "layout.twig" %}
 
 {% block content %}
-<header>
-{{widget('companyheader', 'companyheader', {"defaultlogo": asset('images/streammarket-logo.png')})|raw}}
-{{widget('extendednavigation', 'navigationheader', {"align":"center"})|raw}}
+
+<div class="canvas">
+
+<header class="wrapper clearfix">
+    <div class="companyheader clearfix">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.svg')})|raw}}
+        {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+    </div>
+    {{widget('extendednavigation', 'navigationheader', {})|raw}}
 </header>
 
-{{zone('main')|raw}}
+<section>
+	{{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum", 'positionTopPercentage': '50','showBtn': true})|raw}}
+</section>
 
-<footer>
-{{widget('companyaddress', 'companyaddressfooter', {"bkprofileaddress":profile.address, 
-"bkprofileaddress1":profile.address1, "bkprofileaddress2":profile.address2, 
-"bkprofilepostalcode":profile.postalcode, "bkprofilecountry":profile.country})|raw}}
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div>
+
+<footer class="wrapper">
+    <div class="responsivecolumns columns-two-50-50">
+        <div class="column columns-two-left">
+           	{{widget('profile', 'footercolumn1profilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+        </div>
+        <div class="column columns-two-right">
+            {{widget('profile', 'footercolumn2socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+        </div>
+    </div>
 </footer>
 
+</div>
 
 {% endblock %}
