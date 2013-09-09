@@ -2,6 +2,11 @@
     "name":"Stream Market",
     "thumbnail":"streammarket.png",
     "screenshot":"streammarket.png",
+    "tags": {
+        "en": ["Professional", "Dark", "Clean", "Business", "Professional"],
+        "es": ["Profesional", "Oscuro", "Limpio", "Corporativo", "Profesional"],
+        "br": ["Profissional", "Escuro", "Limpo", "Corporativo", "Profissional"]
+    },
     "colorSwatches":
     {
         "Swatch 1": {
