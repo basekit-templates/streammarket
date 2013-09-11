@@ -3,9 +3,9 @@
     "thumbnail":"streammarket.png",
     "screenshot":"streammarket.png",
     "tags": {
-        "en": ["Professional", "Dark", "Clean", "Business", "Professional"],
-        "es": ["Profesional", "Oscuro", "Limpio", "Corporativo", "Profesional"],
-        "br": ["Profissional", "Escuro", "Limpo", "Corporativo", "Profissional"]
+        "en": ["Professional", "Dark", "Clean", "Business", "Professional", "marketing", "agency", "money", "stocks", "elegant", "sophisticated", "media", "sans-serif", "advertising"],
+        "es": ["Profesional", "Oscuro", "Limpio", "Corporativo", "Profesional", "marketing", "agencia", "dinero", "stocks", "elegante", "sofisticado", "comunicacion", "sans-serif", "publicidad"],
+        "br": ["Profissional", "Escuro", "Limpo", "Corporativo", "Profissional", "marketing", "agência", "dinheiro", "estoques", "elegante", "sofisticado", "mídia", "sans-serif", "publicidade"]
     },
     "colorSwatches":
     {
