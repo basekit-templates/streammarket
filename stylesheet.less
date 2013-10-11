@@ -1,3 +1,5 @@
+@import templatecommon('/paypal.less');
+
 body {
     background-color: @color-swatch2;
     background-image: image('/images/section-bg.png');
@@ -609,6 +611,24 @@ footer .columns-two-right {
     font-size: @font-swatch5-font-size;
     line-height: @font-swatch5-line-height;
 }
+
+/* ===============================
+   PAYPAL BUTTON
+   =============================== */
+
+
+.widget.paypalbuynow .widget.button.paypal {
+     border: 1px solid darken(@color-swatch3,3%);
+      text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+}
+
 
 /* ===============================
    BUTTON CSS
