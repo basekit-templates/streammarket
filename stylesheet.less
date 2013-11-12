@@ -619,9 +619,9 @@ footer .columns-two-right {
 
 
 .widget.paypalbuynow .widget.button.paypal {
-    padding: 10px 22px 10px 45px;
-    border: 1px solid darken(@color-swatch3,3%);
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+     border: 1px solid darken(@color-swatch3,3%);
+      text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -631,19 +631,48 @@ footer .columns-two-right {
 }
 
 /* ===============================
-   DROPBOX WIDGET
+   DROPBOX BUTTON
    =============================== */
 
+
+
 .widget.dropbox .b-wrap .btn {
-    padding: 10px 22px 10px 45px;
-    border: 1px solid darken(@color-swatch3,3%);
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+  margin: 0;
+  padding: 20px 22px 20px 45px;
+  background-image: image('/images/dropbox-icon.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 19px center;
+  margin: 2.2em auto;
+  border: 1px solid darken(@color-swatch3,3%);
+      text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    text-decoration: none;
-    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
-    text-transform: uppercase;
+
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch7-background-color;
+  color: @font-swatch7-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.widget.dropbox .b-wrap .btn:hover {
+  background-color: @font-swatch7-background-color-hover;
+}
+
+.widget.dropbox .b-wrap .file-name {
+  font-family: @font-swatch5-font-family;
+  font-size: @font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height: @font-swatch5-line-height;
+  color: @font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
+    padding-left: 5px;
+
 }
 
 
