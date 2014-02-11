@@ -4,7 +4,7 @@
 
 <div class="canvas">
 
-<header>
+<header class="bk-header">
     <div class="wrapper clearfix">
         <div class="companyheader clearfix">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.svg')})|raw}}
@@ -24,7 +24,7 @@
     {{zone('main')|raw}}
 </div>
 
-<footer class="wrapper">
+<footer class="wrapper bk-footer">
     <div class="responsivecolumns columns-two-50-50">
         <div class="column columns-two-left">
            	{{widget('profile', 'footercolumn1profilecopyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
