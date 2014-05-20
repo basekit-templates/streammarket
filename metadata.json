@@ -2,6 +2,7 @@
     "name":"Stream Market",
     "thumbnail":"streammarket.png",
     "screenshot":"streammarket.png",
+    "templateType":"standard",
     "tags": {
         "en": ["Professional", "Dark", "Clean", "Business", "Professional", "marketing", "agency", "money", "stocks", "elegant", "sophisticated", "media", "sans-serif", "advertising"],
         "es": ["Profesional", "Oscuro", "Limpio", "Corporativo", "Profesional", "marketing", "agencia", "dinero", "stocks", "elegante", "sofisticado", "comunicacion", "sans-serif", "publicidad"],
