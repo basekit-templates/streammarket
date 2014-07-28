@@ -75,18 +75,25 @@ header.bk-header {
 
 /* COMPANY NAME */
 
-.widget.companyname {
+/*.widget.companyname {
     display: block;
     float: left;
-}
+}*/
 
 /* LOGO */
 
 .widget.logo {
-    display: block;
-    float: left;
+/*    display: block;
+    float: left;*/
     margin-right: 8px;
     margin-top: 3px;
+}
+
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 /* ===============================
