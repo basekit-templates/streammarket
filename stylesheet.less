@@ -973,7 +973,8 @@ hr.line.align-right {
 .widget.socialicons a,
 .widget.profile .bk-profile-socialicons a {
     text-decoration: none;
-    text-indent: -9999px;
+    text-indent: 9999px;
+    overflow: hidden;
     white-space: nowrap;
 }
 
@@ -1155,11 +1156,10 @@ footer .footer2 .widget.profile form {
   letter-spacing: @font-swatch5-letter-spacing;
 }
 
-.widget.profile form input {
-    height: 42px;
+.widget.profile form fieldset input {
+    height: 55px;
     margin: 0 0 6px;
-    background-color: lighten(@color-swatch5,25%);
-    border: 1px solid lighten(@color-swatch5,20%);
+    border: 1px solid lighten(@color-swatch5,35%);
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
     font-weight: 300;
@@ -1214,7 +1214,7 @@ footer .footer2 .widget.profile form {
    =============================== */
 
 .widget.signupform fieldset input {
-    height: 53px;
+    height: 55px;
     padding-left: 10px;
     background-color: lighten(@color-swatch5,40%);
     border: 1px solid lighten(@color-swatch5,35%);
@@ -1229,7 +1229,7 @@ footer .footer2 .widget.profile form {
 
 .widget.signupform button {
     padding: 12px 20px 13px;
-    margin: 0;
+    margin: 0 0 0 5px;
     border: 1px solid darken(@color-swatch3,3%);
 
     font-family: @font-swatch7-font-family;
@@ -1371,7 +1371,6 @@ footer .footer2 .widget.profile form {
             background-repeat: no-repeat;
             background-position: center;
             height: 250px;
-            width: 250px;
             margin-bottom: 20px;
             img {
                 display: none;
@@ -1442,7 +1441,7 @@ footer .footer2 .widget.profile form {
         }
         button {
             padding: 11px 20px 11px;
-            margin: 0;
+            margin: 0 0 0 5px;
             border: 1px solid darken(@color-swatch3,3%);
             text-shadow: 0 1px 0px rgba(0,0,0,0.2);
             -webkit-border-radius: 3px;
@@ -1468,52 +1467,327 @@ footer .footer2 .widget.profile form {
    MENU
    =============================== */
 
-.menu {
-    .main {
-        width: 100%;
-    }
-    .menu-item-image-wrap {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 180px;
-        margin: 0.25em 0 0.75em;
-        background-position: center;
-        @media @mobile {
-           margin: 1em 0 0.5em;
-        }
-        img {
-           display: none;
+// Menu Sections
+.widget.menusections {
+    margin: 0 0 30px;
+    ul {
+        padding: 1em!important;
+        text-align: center;
+        li {
+            @media @mobile {
+                width: 100%;
+                margin: 0;
+            }
         }
     }
-    .menu-items {
-        .menu-item {
-            padding: 30px;
-            background-color: lighten(@color-swatch5,40%);
-            border: 1px solid lighten(@color-swatch5,35%);
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-            border-radius: 3px;
-            margin-bottom: 30px;
-        }
-    }
-    .menu-subsection {
-        padding: 30px;
-        background-color: lighten(@color-swatch5,40%);
-        border: 1px solid lighten(@color-swatch5,35%);
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        .menu-item { 
-            background-color: @color-swatch1;
+    a {
+        color: @color-swatch4;
+        &:hover {
+            color: @color-swatch3;
+            text-decoration: none;
         }
     }
 }
+
+// Main Menu
+.widget.menu {
+    .main.wrapper {
+        width: 100%;
+        margin: 0 0 2em;
+        border-bottom: 1px solid @color-swatch2;
+        padding-bottom: 30px;
+    }
+    .menu-header {
+        margin-bottom: 30px;
+    }
+    .menu-name,
+    .menu-description,
+    .menu-note,
+    .menu-subsection-name,
+    .menu-subsection-description {
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .menu-subsection {
+        padding: 0;
+    }
+    .menu-item-image-wrap {
+        background-image: none!important;
+        img {
+            max-height: 180px;
+        }
+    }
+}
+
+// Promoted Item
+.widget.menusections ul {
+    padding: 2em;
+    border-top: 1px solid @color-swatch2;
+    border-bottom: 1px solid @color-swatch2;
+}
+
+.menu .menu-items li.menu-item-promoted,
+.menu-subsection-promoted {
+    padding: 2em;
+    border-bottom: 1px solid @color-swatch2;
+    border-top: 1px solid @color-swatch2;
+    background-color: lighten(@color-swatch5,45%);
+}
+
+// Nutritional Info
+.menu-item-nutritional-title {
+    font-size: bkscale(@font-swatch5-font-size,0.8);
+    letter-spacing: @font-swatch7-letter-spacing;
+    text-transform: uppercase;
+}
+.menu-item-nutritional-prop {
+    font-size: bkscale(@font-swatch5-font-size,0.8);
+    line-height: bkscale(@font-swatch5-line-height,0.8);
+    margin-bottom: 10px;
+}
+
+// Price
+.standard-price {
+    color: @font-swatch4-color;
+    font-family: @font-swatch4-font-family;
+    font-size: @font-swatch4-font-size;
+    font-weight: @font-swatch4-font-weight;
+    line-height: @font-swatch4-line-height;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+// Dietary Icons
+.menu .menu-section-item-dietary-props .dietary-icon {
+    text-transform: uppercase;
+    padding: 1px 6px;
+    background-color: @color-swatch1;
+    border: 2px solid @color-swatch3;
+    color: @color-swatch3;
+    font-family: @font-swatch7-font-family;
+    font-size: 11px;
+    font-weight: @font-swatch7-font-weight;
+    line-height: @font-swatch7-line-height;
+    letter-spacing: @font-swatch7-letter-spacing;
+}
+
+/* =======================================
+   ECOMMERCE
+   ==================================== */
+
+   .widget.ecomproduct .ecom-product .ecom-product-preview-image-wrap {
+        background-position: 0 3000%;
+   }
+
+   .ecom-product-variation select,
+   .widget.ecomcheckout .delivery select {
+
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+        cursor: pointer;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: right center;
+        margin: 0;
+        color: @color-swatch5;
+        position: relative;
+        display: inline-block;
+        font-family: @font-swatch7-font-family;
+        font-size: @font-swatch7-font-size;
+        font-weight: @font-swatch7-font-weight;
+        line-height: 1;
+        border-radius: 0;
+        webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid @color-swatch5;
+        background-color: @color-swatch1;
+        padding: 8px 38px 8px 14px;
+        text-indent: 0;
+        letter-spacing: 0;
+        float: none;
+        height: 41px;
+        background-image: image('/images/ui-select-arrow.png');
+
+        @media @mobile {
+          display: block;
+          width: 100%;
+        }
+    }
+
+   .widget.ecomproductslist {
+  .ecom-productslist-products {
+    // Filter
+    .productlist-filter {
+      .productlist-display-form {
+        .clearfix;
+        margin-bottom: 1em;
+        text-align: center;
+        .form-group {
+          margin-right: 0.5em;
+          margin-left: 0.5em;
+          display: inline-block;
+          vertical-align: center;
+          @media @mobile {
+            display: block;
+            margin-bottom: 10px;
+          }
+          label {
+            display: block;
+            font-size: bkscale(@font-swatch5-font-size, 0.8);
+            text-align: center;
+            @media @mobile {
+              text-align: left;
+            }
+          }
+          select {
+            -moz-appearance: none;
+            text-indent: 0.01px;
+            -webkit-appearance: none;
+            text-overflow: '';
+            cursor: pointer;
+            position: relative;
+            background-repeat: no-repeat;
+            background-position: right center;
+            margin: 0;
+            color: @color-swatch5;
+            position: relative;
+            display: inline-block;
+            font-family: @font-swatch7-font-family;
+            font-size: @font-swatch7-font-size;
+            font-weight: @font-swatch7-font-weight;
+            line-height: 1;
+            border-radius: 0;
+            webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid @color-swatch5;
+            background-color: @color-swatch1;
+            padding: 8px 38px 8px 14px;
+            text-indent: 0;
+            letter-spacing: 0;
+            float: none;
+            height: 41px;
+            background-image: image('/images/ui-select-arrow.png');
+
+            @media @mobile {
+              display: block;
+              width: 100%;
+            }
+          }
+
+          button {
+            font-family: @font-swatch7-font-family;
+            font-weight:@font-swatch7-font-weight;
+            line-height: @font-swatch7-line-height;
+            letter-spacing: @font-swatch7-letter-spacing;
+            background-color: @font-swatch7-background-color;
+            color: @font-swatch7-color;
+            font-size: 1.1em;
+            padding: 6px 16px 5px 16px;
+            margin: 1em 0;
+            border: none;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            box-shadow: 0 4px darken(@color-swatch3,15%);
+            text-decoration: none;
+            text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+          }
+
+        }
+      }
+      .productlist-item-count {
+        text-align: center;
+        clear: both;
+      }
+    }
+  }
+}
+
+.svg {
+  .widget.ecomproductslist .ecom-productslist-products .productlist-filter .productlist-display-form .form-group select {
+    background-image: image('/images/ui-select-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: 93%;
+    background-position-y: 55%;
+  }
+}
+
+    /*  Basket Icon  */
+
+    .widget.ecombasket {
+        margin-bottom: 2em;
+    }
+
+    /*  Order Button  */
+
+    .widget.ecomcheckout {
+
+        .checkout-order-button {
+            margin: 20px 0 20px 0;
+            font-family: @font-swatch7-font-family;
+            font-weight:@font-swatch7-font-weight;
+            line-height: @font-swatch7-line-height;
+            letter-spacing: @font-swatch7-letter-spacing;
+            background-color: @font-swatch7-background-color;
+            color: @font-swatch7-color;
+            font-size: 1.1em;
+            padding: 10px 16px;
+            margin: 1em 0;
+            border: none;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            box-shadow: 0 4px darken(@color-swatch3,15%);
+            text-decoration: none;
+            text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+        }
+
+        .delivery-price {
+            line-height: 50px;
+        }
+
+}
+
+.widget.ecomproduct .ecom-product .btn {
+    font-family: @font-swatch7-font-family;
+    font-weight:@font-swatch7-font-weight;
+    line-height: @font-swatch7-line-height;
+    letter-spacing: @font-swatch7-letter-spacing;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
+    font-size: 1.1em;
+    padding: 10px 16px;
+    margin: 1em 0;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 4px darken(@color-swatch3,15%);
+    text-decoration: none;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+
 
 /* ===============================
    IPAD WIDTH
    =============================== */
 
 @media only screen and (max-width: 768px) {
+
+    .widget.extendednavigation ul li.folder {
+        background-image: image('/images/arrow-down.png');
+        background-position: 520px 20px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        padding-right: 20px;
+        &:after {
+            border: 0;
+        }
+    }
 
     .canvas {
         width: 100%;
@@ -1599,6 +1873,10 @@ footer .footer2 .widget.profile form {
         padding-bottom: 33%;
     }
 }
+
+
+
+
 
 /* ===============================
    IPHONE WIDTH
