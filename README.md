@@ -3,6 +3,11 @@ streammarket
 
 BaseKit's StreamMarket Template
 
+Changes - 2014-08-11
++ Onto Develop Branch
++ Template review fixes
++ Basket summary style updates
+
 Changes - 2013-05-22
 + Onto Develop Branch
 

@@ -1743,11 +1743,13 @@ footer .footer2 .widget.profile form {
                 position: relative;
                 @media @tablet{
                     padding-right: 0;
+                    float: left;
                 }
                 @media @mobile {
                     width: auto;
                     padding-left: 0;
                     border-right: none;
+                    float: none;
                 }
                 // Name
                 .basket-summary-productname {
@@ -1770,7 +1772,7 @@ footer .footer2 .widget.profile form {
                     position: absolute;
                     right: 20px;
                     display: block;
-                    top: 20px;
+                    top: 0px;
                     height: 20px;
                     line-height: 30px;
                     text-align: center;
@@ -1782,6 +1784,7 @@ footer .footer2 .widget.profile form {
                     }
                     @media @mobile {
                         width: 130px;
+                        height: 50px;
                     }
                 }
                 // Quantity button
@@ -1790,17 +1793,17 @@ footer .footer2 .widget.profile form {
                     margin: 0;
                     position: absolute;
                     width: 150px;
-                    right: 20px;
-                    top: 50px;
                     height: 40px;
                     @media @tablet {
                         position: relative;
                         right: 0;
                         top: 0;
+                        float: right;
                     }
                     @media @mobile {
                         height: 30px;
                         width: 130px;
+                        float: none;
                     }
                     button {
                         font-family: @font-swatch5-font-family;
@@ -1863,7 +1866,7 @@ footer .footer2 .widget.profile form {
                     text-align: left;
                     position: absolute;
                     right: 0;
-                    bottom: 20px;
+                    bottom: 10px;
                 }
             }
         }
