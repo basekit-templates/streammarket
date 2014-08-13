@@ -51,7 +51,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .page-title h4 {
     padding-bottom: 0;
-    color: lighten(@color-swatch4,40%);
+    color: @color-swatch1;
+}
+
+.main.wrapper .widget {
+    .clearfix;
 }
 
 /* ===============================
@@ -72,13 +76,6 @@ header.bk-header {
         width: 75%;
     }
 }
-
-/* COMPANY NAME */
-
-/*.widget.companyname {
-    display: block;
-    float: left;
-}*/
 
 /* LOGO */
 
@@ -157,7 +154,7 @@ footer.bk-footer .columns-two-right {
 .widget.extendednavigation ul li a,
 .widget.extendednavigation ul li.folder .text {
     display: block;
-    padding: 8px 32px;
+    padding: 8px 15px;
     font-family: @font-swatch6-font-family;
     font-size: @font-swatch6-font-size;
     font-weight: @font-swatch6-font-weight;
@@ -180,8 +177,13 @@ footer.bk-footer .columns-two-right {
     background-position: right 20px;
     background-repeat: no-repeat;
     cursor: pointer;
+    padding: 0px 20px 0px 0px;
+    margin-right: 0px;
     &:after {
         border: 0;
+    }
+    @media @tablet {
+        margin-right: 10px;
     }
 }
 
@@ -654,6 +656,15 @@ hr.line.align-right {
     border-radius: 4px; 
 }
 
+.widget.twitter ul li a {
+    font-size: @font-swatch5-font-size;
+}
+
+.twitter ul li time {
+    font-size: @font-swatch5-font-size;
+}
+
+
 .widget.twitter ul li img {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -966,7 +977,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons {
 
 .widget.profile span,
 .widget.profile a {
-    display: block;
+    display: inline;
     font-size: @font-swatch5-font-size;
     font-family: @font-swatch5-font-family;
     color: @font-swatch5-color;
@@ -1143,9 +1154,14 @@ footer .footer2 .widget.profile form {
     }
     .title {
         display: block;
+        padding: 0;
+    }
+    .description {
+        padding: 0;
     }
     .content-wrapper {
         background: rgba(0,0,0,0.5);
+        padding: 5px 20px 0 20px;
     }
     .slideshow-widget {
         /* Arrows */
@@ -1490,6 +1506,7 @@ footer .footer2 .widget.profile form {
 
    .widget.ecomproductslist {
   .ecom-productslist-products {
+
     // Filter
     .productlist-filter {
       .productlist-display-form {
@@ -1506,7 +1523,8 @@ footer .footer2 .widget.profile form {
             margin-bottom: 10px;
           }
           label {
-            text-align: center;
+            text-align: left;
+            display: block;
             @media @mobile {
               text-align: left;
             }
@@ -1568,12 +1586,20 @@ footer .footer2 .widget.profile form {
         }
       }
       .productlist-item-count {
-        text-align: center;
+        text-align: left;
         clear: both;
       }
     }
   }
 }
+
+    // Search label
+
+.widget.ecomproductslist .ecom-productslist-products .productlist-filter .productlist-display-form .form-group.productlist-search label {
+        margin-bottom: -15px;
+}
+
+
 
 .svg {
   .widget.ecomproductslist .ecom-productslist-products .productlist-filter .productlist-display-form .form-group select {
