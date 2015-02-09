@@ -416,6 +416,9 @@ footer.bk-footer .columns-two-right {
     border-radius: 4px;
     cursor: pointer;
     display: inline-block;
+    .more, .less {
+        color: @font-swatch7-color;
+    }
 }
 
 .widget.content span.expand:hover,
@@ -653,7 +656,7 @@ hr.line.align-right {
     color: @font-swatch5-color;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px; 
+    border-radius: 4px;
 }
 
 .widget.twitter ul li a {
@@ -902,7 +905,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons {
 }
 
 .widget.socialicons span a:hover,
-.widget.profile 
+.widget.profile
 .bk-profile-socialicons span a:hover {
     background-color: @font-swatch7-background-color-hover
 }
@@ -2040,12 +2043,12 @@ footer .footer2 .widget.profile form {
    IPHONE WIDTH
    =============================== */
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
 
     .widget.companyname a {
         font-size: bkscale(@font-swatch10-font-size,0.9);
     }
-    
+
     /* UL ALIGN RIGHT */
 
     .widget.extendednavigation ul.align-right li:hover ul li {
@@ -2112,7 +2115,7 @@ footer .footer2 .widget.profile form {
 
 }
 
-@media only screen and (min-width: 1140px) { 
+@media only screen and (min-width: 1140px) {
     .wrapper {
         max-width: 1140px;
         margin: 0 auto;
