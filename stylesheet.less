@@ -183,7 +183,8 @@ footer.bk-footer .columns-two-right {
         border: 0;
     }
     @media @tablet {
-        margin-right: 10px;
+        margin: 0;
+        padding-right: 0;
     }
 }
 
@@ -298,6 +299,8 @@ footer.bk-footer .columns-two-right {
     line-height: @font-swatch8-line-height;
     color: @font-swatch8-color;
     letter-spacing: @font-swatch8-letter-spacing;
+    margin: 0;
+    padding: 0;
 }
 
 /* FEATURE STRAPLINE */
@@ -331,6 +334,30 @@ footer.bk-footer .columns-two-right {
     box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
     text-decoration: none;
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+}
+
+.widget.ecombasket .ecombasket-pull,
+.widget.ecomproduct .ecom-product .btn,
+.btn.basket-summary-submit,
+.widget.ecomproductslist .ecom-productslist-products .productlist-filter .productlist-display-form .form-group button,
+button.btn,
+.btn.ecombasket-summary-link {
+    font-family: @font-swatch7-font-family;
+    font-size: 0.9em;
+    font-weight: @font-swatch7-font-weight;
+    line-height: @font-swatch7-line-height;
+    color: @font-swatch7-color;
+    letter-spacing: @font-swatch7-letter-spacing;
+    background-color: @font-swatch7-background-color;
+    padding: 10px 24px;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    &:hover {
+        background-color: @font-swatch7-background-color-hover;
+    }
 }
 
 .widget.feature button:hover {
@@ -648,7 +675,7 @@ hr.line.align-right {
 }
 
 .widget.twitter ul li {
-    padding: 30px;
+    padding: 40px 30px 0 30px;
     margin-bottom: 20px;
     background-color: lighten(@color-swatch5,40%);
     border: 1px solid lighten(@color-swatch5,35%);
@@ -1259,17 +1286,22 @@ footer .footer2 .widget.profile form {
             -moz-border-radius: 3px;
             border-radius: 3px;
         }
-        .blog-post-feature-image-wrap {  /* Blog post feature image */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 250px;
-            margin-bottom: 20px;
-            img {
-                display: none;
-            }
-        }
     }
+}
+
+.blog-post-feature-image-wrap { 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    margin-bottom: 20px;
+    img {
+        display: none;
+    }
+}
+
+.widget.blogpost .blog-post-feature-image-wrap {
+    height: 500px;
 }
 
 .blog-post-item {
@@ -1308,6 +1340,10 @@ footer .footer2 .widget.profile form {
     width: 100%;
 }
 
+.blog-post-sharing {
+    margin-top: 10px;
+}
+
 /* BLOG SEARCH */
 .blogsearch {
     form {
@@ -1333,7 +1369,7 @@ footer .footer2 .widget.profile form {
             padding-left: 10px;
         }
         button {
-            padding: 11px 20px 11px;
+            padding: 10px 20px 13px;
             margin: 0 0 0 5px;
             border: 1px solid darken(@color-swatch3,3%);
             text-shadow: 0 1px 0px rgba(0,0,0,0.2);
@@ -1424,7 +1460,7 @@ footer .footer2 .widget.profile form {
     padding: 2em;
     border-bottom: 1px solid @color-swatch2;
     border-top: 1px solid @color-swatch2;
-    background-color: lighten(@color-swatch5,45%);
+    background-color: lighten(@color-swatch5,40%);
 }
 
 // Nutritional Info
@@ -1577,8 +1613,7 @@ footer .footer2 .widget.profile form {
             background-color: @font-swatch7-background-color;
             color: @font-swatch7-color;
             font-size: 1.1em;
-            padding: 6px 16px 5px 16px;
-            margin: 1em 0;
+            padding: 7px 16px 9px 16px;
             border: none;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
@@ -1598,11 +1633,6 @@ footer .footer2 .widget.profile form {
 }
 
     // Search label
-
-.widget.ecomproductslist .ecom-productslist-products .productlist-filter .productlist-display-form .form-group.productlist-search label {
-        margin-bottom: -15px;
-}
-
 
 
 .svg {
@@ -1931,6 +1961,11 @@ footer .footer2 .widget.profile form {
     }
 }
 
+.widget.ecombasket .ecombasket-list-container ul li .ecombasket-item-info .ecombasket-remove-button {
+    border: 0;
+    background-color: transparent;
+}
+
 
 /* ===============================
    IPAD WIDTH
@@ -1943,7 +1978,6 @@ footer .footer2 .widget.profile form {
         float: right;
         background-repeat: no-repeat;
         cursor: pointer;
-        padding-right: 10px;
         &:after {
             border: 0;
         }
@@ -1961,7 +1995,11 @@ footer .footer2 .widget.profile form {
 
     .widget.extendednavigation a.pull {
         top: 0;
-        margin-top: 15px;
+        margin-top: 20px;
+    }
+
+    .widget.extendednavigation ul.align-right li.folder {
+        background-position: 12px center
     }
 
     .widget.extendednavigation {
@@ -1984,10 +2022,6 @@ footer .footer2 .widget.profile form {
         width: 100%;
         padding: 0;
         border-bottom: 0;
-    }
-
-    .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
-      padding-right: 30px;
     }
 
     .widget.extendednavigation ul li:hover > ul {
@@ -2053,10 +2087,6 @@ footer .footer2 .widget.profile form {
 
     .widget.extendednavigation ul.align-right li:hover ul li {
         text-align: right
-    }
-
-    .widget.extendednavigation ul.align-right li.folder {
-        background-position: 12px center
     }
 
     /* UL ALIGN LEFT */
