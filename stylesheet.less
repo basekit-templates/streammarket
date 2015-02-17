@@ -119,10 +119,14 @@ footer.bk-footer .columns-two-right {
 
 
 .widget.extendednavigation {
-    float: right;
+    display: inline-block;
     position: relative;
     width: 75%;
     margin: 0;
+    vertical-align: text-top;
+    @media @tablet {
+        display: initial;
+    }
 }
 
 .widget.extendednavigation ul {
