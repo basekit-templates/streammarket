@@ -207,6 +207,7 @@ footer.bk-footer .columns-two-right {
 }
 .widget .extendednavigation ul li:hover ul {
     background-color: lighten(@color-swatch5,40%);
+    min-width: 180px;
 }
 
 .widget.extendednavigation li:hover > ul {
@@ -677,7 +678,7 @@ hr.line.align-right {
 }
 
 .widget.twitter ul li {
-    padding: 40px 30px 0 30px;
+    padding: 40px 30px 30px 30px;
     margin-bottom: 20px;
     background-color: lighten(@color-swatch5,40%);
     border: 1px solid lighten(@color-swatch5,35%);
@@ -706,7 +707,6 @@ hr.line.align-right {
 .widget.twitter .twitter-profile-pic {
     float: left;
     margin-right: 20px;
-    margin-bottom: 30px;
 }
 
 .widget.twitter .twitter-content span.bk-full-name {
@@ -1990,6 +1990,11 @@ footer .footer2 .widget.profile form {
         &:after {
             border: 0;
         }
+    }
+
+    .widget.extendednavigation .bk-overlay {
+        width: 40px;
+        left: inherit !important;
     }
 
     .canvas {
