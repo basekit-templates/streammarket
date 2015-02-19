@@ -1376,6 +1376,7 @@ footer .footer2 .widget.profile form {
             border-radius: 3px;
             padding-left: 10px;
             margin: 0 5px 0 0;
+            -webkit-appearance: none;
         }
         button {
             padding: 11px 20px 11px;
@@ -1519,33 +1520,23 @@ footer .footer2 .widget.profile form {
    .ecom-product-variation select,
    .widget.ecomcheckout .delivery select {
 
-        -moz-appearance: none;
-        text-indent: 0.01px;
-        text-overflow: '';
-        cursor: pointer;
-        position: relative;
-        background-repeat: no-repeat;
-        background-position: right center;
-        margin: 0;
-        color: @color-swatch5;
-        position: relative;
-        display: inline-block;
-        font-family: @font-swatch7-font-family;
-        font-size: @font-swatch7-font-size;
-        font-weight: @font-swatch7-font-weight;
-        line-height: 1;
-        border-radius: 0;
-        webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        border: 1px solid @color-swatch5;
+
         background-color: @color-swatch1;
-        padding: 8px 38px 8px 14px;
+        border: 1px solid @font-swatch5-color;
+        color: @font-swatch5-color;
+        line-height: 20px;
+        font-size: 13px;
         text-indent: 0;
-        letter-spacing: 0;
-        float: none;
-        height: 41px;
-        background-image: image('/images/ui-select-arrow.png');
+        width: 100%;
+        padding: 8px 10px 10px;
+        outline: none;
+        -webkit-transition: border .2s;
+        -moz-transition: border .2s;
+        -ms-transition: border .2s;
+        transition: border .2s;
+        border-radius: 0;
+        height: 45px;
+        
 
         @media @mobile {
           display: block;
@@ -1579,34 +1570,22 @@ footer .footer2 .widget.profile form {
             }
           }
           select {
-            -moz-appearance: none;
-            text-indent: 0.01px;
-            -webkit-appearance: none;
-            text-overflow: '';
-            cursor: pointer;
-            position: relative;
-            background-repeat: no-repeat;
-            background-position: right center;
-            margin: 0;
-            color: @color-swatch5;
-            position: relative;
-            display: inline-block;
-            font-family: @font-swatch7-font-family;
-            font-size: @font-swatch7-font-size;
-            font-weight: @font-swatch7-font-weight;
-            line-height: 1;
-            border-radius: 0;
-            webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-            border: 1px solid @color-swatch5;
             background-color: @color-swatch1;
-            padding: 8px 38px 8px 14px;
+            border: 1px solid @font-swatch5-color;
+            color: @font-swatch5-color;
+            line-height: 20px;
+            font-size: 13px;
             text-indent: 0;
-            letter-spacing: 0;
-            float: none;
-            height: 41px;
-            background-image: image('/images/ui-select-arrow.png');
+            width: 100%;
+            padding: 8px 10px 10px;
+            outline: none;
+            -webkit-transition: border .2s;
+            -moz-transition: border .2s;
+            -ms-transition: border .2s;
+            transition: border .2s;
+            border-radius: 0;
+            height: 45px;
+
 
             @media @mobile {
               display: block;
@@ -1646,12 +1625,16 @@ footer .footer2 .widget.profile form {
 
 .svg {
   .widget.ecomproductslist .ecom-productslist-products .productlist-filter .productlist-display-form .form-group select {
-    background-image: image('/images/ui-select-arrow.svg');
     background-repeat: no-repeat;
     background-size: 15px;
     background-position-x: 93%;
     background-position-y: 55%;
   }
+}
+
+.productlist-search input {
+    padding: 0;
+    height: 43px;
 }
 
     /*  Basket Icon  */
