@@ -760,23 +760,31 @@ hr.line.align-right {
 }
 
 /* ===============================
-   CONTACT FORM
+   CONTACT FORM AND ADVANCED FORM
    =============================== */
 
-.widget.contactform form {
+.widget.contactform form,
+.advancedcontactform form {
     display: block;
     padding: 20px 0 0;
     margin-bottom: 20px;
 }
 
-.widget.contactform fieldset {
+.widget.contactform fieldset,
+.advancedcontactform fieldset {
     border: none;
     padding: 0;
 }
 
-.widget.contactform fieldset label {
+.widget.contactform fieldset label,
+.advancedcontactform .form-group>label {
     width: 100%;
     float: left;
+}
+
+.widget.contactform fieldset label,
+.advancedcontactform .form-group>label,
+.advancedcontactform .option-list .option-item .label {
     font-family: @font-swatch4-font-family;
     font-size: @font-swatch4-font-size;
     font-weight: @font-swatch4-font-weight;
@@ -785,7 +793,10 @@ hr.line.align-right {
     letter-spacing: @font-swatch4-letter-spacing;
 }
 
-.widget.contactform fieldset input {
+.widget.contactform fieldset input,
+.advancedcontactform form input[type=email], 
+.advancedcontactform form input[type=text],
+.advancedcontactform form select {
     height: 50px;
     width: 100%;
     background-color: lighten(@color-swatch5,40%);
@@ -801,7 +812,8 @@ hr.line.align-right {
     margin-bottom: 30px;
 }
 
-.widget.contactform fieldset textarea {
+.widget.contactform fieldset textarea,
+.advancedcontactform fieldset textarea {
     height: 100px;
     width: 100%;
     background-color: lighten(@color-swatch5,40%);
@@ -819,7 +831,8 @@ hr.line.align-right {
     resize: none;
 }
 
-.widget.contactform fieldset button.btn {
+.widget.contactform fieldset button.btn,
+.advancedcontactform fieldset button {
     display: block;
     padding: 10px 20px;
     margin: 0;
@@ -840,7 +853,8 @@ hr.line.align-right {
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
 
-.widget.contactform fieldset button.btn:hover {
+.widget.contactform fieldset button.btn:hover,
+.advancedcontactform fieldset button:hover {
     background-color: @font-swatch7-background-color-hover;
     cursor: pointer;
 }
@@ -867,6 +881,10 @@ hr.line.align-right {
 
 .widget.contactform fieldset button.btn.bold {
     font-weight: bold
+}
+
+.advancedcontactform .option-list {
+    padding: 1em 0;
 }
 
 /* ===============================
