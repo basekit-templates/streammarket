@@ -1,5 +1,6 @@
 {
     "name":"Stream Market",
+    "versionTenCompatible": 1,
     "thumbnail":"streammarket.png",
     "screenshot":"streammarket-screenshot.jpg",
     "templateType":"standard",
